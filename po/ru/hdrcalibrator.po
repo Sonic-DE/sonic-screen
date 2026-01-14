@@ -1,65 +1,65 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kscreen package.
 #
-# SPDX-FileCopyrightText: 2025, 2026 Alexander Yavorsky <kekcuha@gmail.com>
-# SPDX-FileCopyrightText: 2025, 2026 Olesya Gerasimenko <goa@altlinux.ru>
+# SPDX-FileCopyrightText: 2025 Alexander Yavorsky <kekcuha@gmail.com>
+# SPDX-FileCopyrightText: 2025 Olesya Gerasimenko <goa@altlinux.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-07 00:46+0000\n"
-"PO-Revision-Date: 2026-02-27 13:50+0300\n"
-"Last-Translator: Olesya Gerasimenko <goa@altlinux.org>\n"
-"Language-Team: Basealt Translation Team\n"
+"POT-Creation-Date: 2026-01-13 08:42+0000\n"
+"PO-Revision-Date: 2025-11-27 19:25+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.11.80\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Олеся Герасименко, Александр Яворский"
+msgstr "Олеся Герасименко"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "translation-team@basealt.ru, kekcuha@gmail.com"
+msgstr "translation-team@basealt.ru"
 
-#: hdrcalibrator.cpp:137 Main.qml:16
+#: hdrcalibrator.cpp:149 ui/Main.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "Калибровка HDR"
 
-#: Main.qml:188 Main.qml:366
+#: ui/Main.qml:190 ui/Main.qml:280 ui/Main.qml:453
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Далее"
 
-#: Main.qml:195 Main.qml:372
+#: ui/Main.qml:197 ui/Main.qml:286 ui/Main.qml:459
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "Переход на следующую страницу"
 
-#: Main.qml:199 Main.qml:376 Main.qml:476
+#: ui/Main.qml:201 ui/Main.qml:290 ui/Main.qml:463 ui/Main.qml:573
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Отмена"
 
-#: Main.qml:202 Main.qml:379 Main.qml:479
+#: ui/Main.qml:204 ui/Main.qml:293 ui/Main.qml:466 ui/Main.qml:576
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "Отменить процесс калибровки"
 
-#: Main.qml:211
+#: ui/Main.qml:209
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
@@ -68,12 +68,21 @@ msgstr ""
 "Чтобы определить максимальную яркость экрана, перемещайте ползунок до тех "
 "пор, пока логотип не станет едва видимым."
 
-#: Main.qml:390
+#: ui/Main.qml:298
 #, kde-format
 msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth.\n"
+"To determine the maximum average brightness of the screen, adjust the slider "
+"until the logo is barely visible"
+msgstr ""
+"Чтобы определить максимальную среднюю яркость экрана, перемещайте ползунок "
+"до тех пор, пока логотип не станет едва видимым."
+
+#: ui/Main.qml:475
+#, kde-format
+msgid ""
+"Configure how bright \"100%\" on the normal brightness slider should be. "
+"Make it as bright as you'd ever use it, as long as the HDR image still looks "
+"good and the gradients are smooth.\n"
 "To avoid brightness fluctuations, it's recommended to not exceed the "
 "display's maximum average brightness of %1cd/m²"
 msgstr ""
@@ -84,63 +93,45 @@ msgstr ""
 "Чтобы избежать колебаний яркости, рекомендуется не превышать максимальную "
 "среднюю яркость дисплея — %1 кд/м²"
 
-#: Main.qml:392
-#, kde-format
-msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth."
-msgstr ""
-"Настройте, насколько ярким должно быть значение «100%» на обычном ползунке "
-"яркости. Установите такую яркость, которую вы максимально используете в "
-"обычной работе, при условии, что HDR-изображение по-прежнему выглядит "
-"хорошо, а градиенты остаются плавными."
-
-#: Main.qml:439
+#: ui/Main.qml:513
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
-msgstr "Максимальная яркость: %1 кд/м²"
+msgstr ""
 
-#: Main.qml:460
+#: ui/Main.qml:542
+#, kde-format
+msgid "Maximum fullscreen luminance: %1cd/m²"
+msgstr ""
+
+#: ui/Main.qml:557
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
-msgstr "Опорная яркость / белизна бумаги: %1 кд/м²"
+msgstr ""
 
-#: Main.qml:471
+#: ui/Main.qml:568
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
-msgstr "Считать, что приложения Windows HDR откалиброваны для этого экрана"
+msgstr ""
 
-#: Main.qml:483
+#: ui/Main.qml:580
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "Готово"
 
-#: Main.qml:492
-#, kde-format
+#: ui/Main.qml:589
+#, fuzzy, kde-format
+#| msgctxt "@info accessible description of a push button"
+#| msgid "Cancels the calibration process"
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
-msgstr "Завершить процесс калибровки"
+msgstr "Отменить процесс калибровки"
 
-#: Main.qml:501
+#: ui/Main.qml:597
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
 "this system wide configuration conflicts with. If this option is set, their "
 "calibration settings will work as expected on this specific display."
 msgstr ""
-"Многие приложения Windows имеют собственные настройки калибровки, которые "
-"могут конфликтовать с этой системной конфигурацией. Если этот параметр "
-"включён, их настройки калибровки будут корректно работать на этом экране."
-
-#~ msgid ""
-#~ "To determine the maximum average brightness of the screen, adjust the "
-#~ "slider until the logo is barely visible"
-#~ msgstr ""
-#~ "Чтобы определить максимальную среднюю яркость экрана, перемещайте "
-#~ "ползунок до тех пор, пока логотип не станет едва видимым."
-
-#~ msgid "Maximum fullscreen luminance: %1cd/m²"
-#~ msgstr "Максимальная яркость в полноэкранном режиме: %1 кд/м²"

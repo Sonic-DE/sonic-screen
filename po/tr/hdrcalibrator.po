@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-07 00:46+0000\n"
-"PO-Revision-Date: 2026-02-24 07:56+0300\n"
-"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"POT-Creation-Date: 2026-01-13 08:42+0000\n"
+"PO-Revision-Date: 2026-01-13 18:13+0300\n"
+"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27,37 +27,37 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "emir_sari@icloud.com"
 
-#: hdrcalibrator.cpp:137 Main.qml:16
+#: hdrcalibrator.cpp:149 ui/Main.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "HDR Kalibrasyonu"
 
-#: Main.qml:188 Main.qml:366
+#: ui/Main.qml:190 ui/Main.qml:280 ui/Main.qml:453
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Sonraki"
 
-#: Main.qml:195 Main.qml:372
+#: ui/Main.qml:197 ui/Main.qml:286 ui/Main.qml:459
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "Sonraki sayfaya geçer"
 
-#: Main.qml:199 Main.qml:376 Main.qml:476
+#: ui/Main.qml:201 ui/Main.qml:290 ui/Main.qml:463 ui/Main.qml:573
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "İptal"
 
-#: Main.qml:202 Main.qml:379 Main.qml:479
+#: ui/Main.qml:204 ui/Main.qml:293 ui/Main.qml:466 ui/Main.qml:576
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "Kalibrasyon sürecini iptal eder"
 
-#: Main.qml:211
+#: ui/Main.qml:209
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
@@ -66,12 +66,21 @@ msgstr ""
 "Ekranın en yüksek parlaklığını algılamak için logo neredeyse görünmez olana "
 "değin sürgüyü sürün."
 
-#: Main.qml:390
+#: ui/Main.qml:298
 #, kde-format
 msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth.\n"
+"To determine the maximum average brightness of the screen, adjust the slider "
+"until the logo is barely visible"
+msgstr ""
+"Ekranın en yüksek ortalama parlaklığını algılamak için logo neredeyse "
+"görünmez olana dek sürgüyü sürün."
+
+#: ui/Main.qml:475
+#, kde-format
+msgid ""
+"Configure how bright \"100%\" on the normal brightness slider should be. "
+"Make it as bright as you'd ever use it, as long as the HDR image still looks "
+"good and the gradients are smooth.\n"
 "To avoid brightness fluctuations, it's recommended to not exceed the "
 "display's maximum average brightness of %1cd/m²"
 msgstr ""
@@ -81,46 +90,40 @@ msgstr ""
 "Parlaklık dalgalanmalarından kaçınmak için ekranın en yüksek ortalama "
 "parlaklığı olan %1 cd/m² değerinin aşılmaması önerilir."
 
-#: Main.qml:392
-#, kde-format
-msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth."
-msgstr ""
-"Normal parlaklık sürgüsündeki “%​100” değerinin ne kadar parlak olması "
-"gerektiğini yapılandırın. Onu, HDR görsel hâlâ düzgünce görünür ve "
-"gradyanlar pürüzsüz kalana değin kullanacağınız en parlak düzeye getirin."
-
-#: Main.qml:439
+#: ui/Main.qml:513
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
 msgstr "En yüksek aydınlık %1 cd/m²"
 
-#: Main.qml:460
+#: ui/Main.qml:542
+#, kde-format
+msgid "Maximum fullscreen luminance: %1cd/m²"
+msgstr "En yüksek tam ekran aydınlığı: %1 cd/m²"
+
+#: ui/Main.qml:557
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
 msgstr "Başvurulan aydınlık / beyaz kâğıt: %1 cd/m²"
 
-#: Main.qml:471
+#: ui/Main.qml:568
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
 msgstr "Windows HDR uygulamalarının bu ekrana göre kalibre edildiğini varsay"
 
-#: Main.qml:483
+#: ui/Main.qml:580
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "Bitti"
 
-#: Main.qml:492
+#: ui/Main.qml:589
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
 msgstr "Kalibrasyon sürecini bitir"
 
-#: Main.qml:501
+#: ui/Main.qml:597
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
@@ -130,13 +133,3 @@ msgstr ""
 "Birçok Windows uygulaması, bu sistem genelindeki yapılandırmayla çakışan "
 "kendi kalibrasyon ayarlarıyla birlikte gelir. Bu seçenek ayarlanırsa "
 "kalibrasyon ayarları bu belirli ekrandan beklendiği gibi çalışacaktır."
-
-#~ msgid ""
-#~ "To determine the maximum average brightness of the screen, adjust the "
-#~ "slider until the logo is barely visible"
-#~ msgstr ""
-#~ "Ekranın en yüksek ortalama parlaklığını algılamak için logo neredeyse "
-#~ "görünmez olana dek sürgüyü sürün."
-
-#~ msgid "Maximum fullscreen luminance: %1cd/m²"
-#~ msgstr "En yüksek tam ekran aydınlığı: %1 cd/m²"
