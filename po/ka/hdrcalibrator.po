@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-07 00:46+0000\n"
-"PO-Revision-Date: 2026-02-24 04:46+0100\n"
+"POT-Creation-Date: 2026-01-15 00:44+0000\n"
+"PO-Revision-Date: 2026-01-14 05:38+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -28,37 +28,37 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "temuri.doghonadze@gmail.com"
 
-#: hdrcalibrator.cpp:137 Main.qml:16
+#: hdrcalibrator.cpp:149 ui/Main.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "HDR-ის კალიბრაცია"
 
-#: Main.qml:188 Main.qml:366
+#: ui/Main.qml:195 ui/Main.qml:285 ui/Main.qml:458
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "შემდეგი"
 
-#: Main.qml:195 Main.qml:372
+#: ui/Main.qml:202 ui/Main.qml:291 ui/Main.qml:464
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "გადაერთვება შემდეგ გვერდზე"
 
-#: Main.qml:199 Main.qml:376 Main.qml:476
+#: ui/Main.qml:206 ui/Main.qml:295 ui/Main.qml:468 ui/Main.qml:578
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: Main.qml:202 Main.qml:379 Main.qml:479
+#: ui/Main.qml:209 ui/Main.qml:298 ui/Main.qml:471 ui/Main.qml:581
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "გააუქმებს კალიბრაციის პროცესს"
 
-#: Main.qml:211
+#: ui/Main.qml:214
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
@@ -67,12 +67,21 @@ msgstr ""
 "იმისათვის, რომ დაადგინოთ ეკრანის მაქსიმალური სიკაშკაშე, გადაწიეთ ჩოჩია "
 "მანამდე, სანამ ლოგო ძლივს არ გამოჩნდება"
 
-#: Main.qml:390
+#: ui/Main.qml:303
 #, kde-format
 msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth.\n"
+"To determine the maximum average brightness of the screen, adjust the slider "
+"until the logo is barely visible"
+msgstr ""
+"იმისათვის, რომ დაადგინოთ ეკრანის მაქსიმალური საშუალო სიკაშკაშე, გადაწიეთ "
+"ჩოჩია მანამდე, სანამ ლოგო ძლივს არ გამოჩნდება"
+
+#: ui/Main.qml:480
+#, kde-format
+msgid ""
+"Configure how bright \"100%\" on the normal brightness slider should be. "
+"Make it as bright as you'd ever use it, as long as the HDR image still looks "
+"good and the gradients are smooth.\n"
 "To avoid brightness fluctuations, it's recommended to not exceed the "
 "display's maximum average brightness of %1cd/m²"
 msgstr ""
@@ -80,49 +89,43 @@ msgstr ""
 "ისეთი კაშკაშაა, როგორიც ოდესმე მაინც მოგინდებათ, სანამ HDR გამოსახულება ჯერ "
 "კიდევ კარგად ჩანს და გრადიენტები გლუვია.\n"
 "იმისათვის, რომ თავიდან აიცილოთ სიკაშკაშის რყევა, რეკომენდებულია, რომ არ "
-"გადააცილოთ ეკრანის საშუალო მაქსიმალურ სიკაშკაშეს %1კდ/მ²"
+"გადააცილოთ ეკრანის საშუალო მაქსიმალურ სიკაშკაშეს %1cd/m²"
 
-#: Main.qml:392
-#, kde-format
-msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth."
-msgstr ""
-"მოირგეთ, რამდენად კაშკაშაა \"100%\" ეკრანის სიკაშკაშე. დარწმუნდით, რომ ის "
-"ისეთი კაშკაშაა, როგორიც ოდესმე მაინც მოგინდებათ, სანამ HDR გამოსახულება ჯერ "
-"კიდევ კარგად ჩანს და გრადიენტები გლუვია."
-
-#: Main.qml:439
+#: ui/Main.qml:518
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
 msgstr "მაქს სინათლის ძალა: %1კდ/მ²"
 
-#: Main.qml:460
+#: ui/Main.qml:547
+#, kde-format
+msgid "Maximum fullscreen luminance: %1cd/m²"
+msgstr "მაქს სრულეკრანიანი სინათლის ძალა: %1კდ/მ²"
+
+#: ui/Main.qml:562
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
 msgstr "მიმართვის სინათლის ძალა / ფურცლისფერი თეთრი: %1კდ/მ²"
 
-#: Main.qml:471
+#: ui/Main.qml:573
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
 msgstr ""
 "ჩათვლა, რომ Windows-ის HDR აპლიკაციების კალიბრაცია უკვე მოხდა ამ ეკრანისთვის"
 
-#: Main.qml:483
+#: ui/Main.qml:585
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "მზადაა"
 
-#: Main.qml:492
+#: ui/Main.qml:594
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
 msgstr "კალიბრაციის პროცესის დასრულება"
 
-#: Main.qml:501
+#: ui/Main.qml:602
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
@@ -133,13 +136,3 @@ msgstr ""
 "რომელთანაც ეს მთელი სისტემისთვის განკუთვნილი კონფიგურაცია შესაბამისი არაა. "
 "თუ ეს პარამეტრი ჩართულია, მათი კალიბრაციის პარამეტრები ნორმალურად იმუშავებს "
 "ამ სპეციფიკურ ეკრანზე."
-
-#~ msgid ""
-#~ "To determine the maximum average brightness of the screen, adjust the "
-#~ "slider until the logo is barely visible"
-#~ msgstr ""
-#~ "იმისათვის, რომ დაადგინოთ ეკრანის მაქსიმალური საშუალო სიკაშკაშე, გადაწიეთ "
-#~ "ჩოჩია მანამდე, სანამ ლოგო ძლივს არ გამოჩნდება"
-
-#~ msgid "Maximum fullscreen luminance: %1cd/m²"
-#~ msgstr "მაქს სრულეკრანიანი სინათლის ძალა: %1კდ/მ²"

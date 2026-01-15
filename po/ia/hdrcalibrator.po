@@ -1,13 +1,13 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kscreen package.
 #
-# SPDX-FileCopyrightText: 2025, 2026 giovanni <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2025 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-07 00:46+0000\n"
-"PO-Revision-Date: 2026-02-24 12:03+0100\n"
+"POT-Creation-Date: 2026-01-15 00:44+0000\n"
+"PO-Revision-Date: 2025-05-27 12:20+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -20,44 +20,44 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Giovanni Sora"
+msgstr ""
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "g.sora@tiscali.it"
+msgstr ""
 
-#: hdrcalibrator.cpp:137 Main.qml:16
+#: hdrcalibrator.cpp:149 ui/Main.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "Calibration HDR"
 
-#: Main.qml:188 Main.qml:366
+#: ui/Main.qml:195 ui/Main.qml:285 ui/Main.qml:458
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Proxime"
 
-#: Main.qml:195 Main.qml:372
+#: ui/Main.qml:202 ui/Main.qml:291 ui/Main.qml:464
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "Passa al proxime pagina"
 
-#: Main.qml:199 Main.qml:376 Main.qml:476
+#: ui/Main.qml:206 ui/Main.qml:295 ui/Main.qml:468 ui/Main.qml:578
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Cancella"
 
-#: Main.qml:202 Main.qml:379 Main.qml:479
+#: ui/Main.qml:209 ui/Main.qml:298 ui/Main.qml:471 ui/Main.qml:581
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "Cancella le processo de calibration"
 
-#: Main.qml:211
+#: ui/Main.qml:214
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
@@ -66,78 +66,74 @@ msgstr ""
 "Per determinar le maxime brillantia del shermo, accomoda le glissator usque "
 "le logo es apena visibile  "
 
-#: Main.qml:390
-#, kde-format
+#: ui/Main.qml:303
+#, fuzzy, kde-format
+#| msgid ""
+#| "To determine the maximum brightness of the screen, adjust the slider "
+#| "until the logo is barely visible"
 msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth.\n"
+"To determine the maximum average brightness of the screen, adjust the slider "
+"until the logo is barely visible"
+msgstr ""
+"Per determinar le maxime brillantia del shermo, accomoda le glissator usque "
+"le logo es apena visibile  "
+
+#: ui/Main.qml:480
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure how bright \"100%\" on the normal brightness slider should be. "
+#| "Make it as bright as you'd ever use it, as long as the HDR image still "
+#| "looks good and the gradients are smooth."
+msgid ""
+"Configure how bright \"100%\" on the normal brightness slider should be. "
+"Make it as bright as you'd ever use it, as long as the HDR image still looks "
+"good and the gradients are smooth.\n"
 "To avoid brightness fluctuations, it's recommended to not exceed the "
 "display's maximum average brightness of %1cd/m²"
 msgstr ""
-"Configura como brillante “100%” deberea esser le glissator per brillantia "
-"normal. Face lo tan brillante como tu jammais lo usa,  usque le imagine HDR "
-"ancora sembla bon e le gradientes es lisie.\n"
-"Per evitar fluctuactiones de brillantia, iles recommendate non exceder le "
-"maxime brillantia medie del monstrator de of %1cd/m²"
-
-#: Main.qml:392
-#, kde-format
-msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth."
-msgstr ""
-"Configura como brillante “100%” deberea esser le glissator per brillantia "
-"normal. Face lo tan brillante como tu jammais lo usa,  usque le imagine HDR "
+"Configura como brillante \"100%\" deberea esser le glissator per brillantia "
+"normal. Face lo tan brillante como tu jammais lo usa,  usque leimagine HDR "
 "ancora sembla bon e le gradientes es lisie."
 
-#: Main.qml:439
+#: ui/Main.qml:518
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
-msgstr "Maxime luminantia: %1cd/m²"
+msgstr ""
 
-#: Main.qml:460
+#: ui/Main.qml:547
+#, kde-format
+msgid "Maximum fullscreen luminance: %1cd/m²"
+msgstr ""
+
+#: ui/Main.qml:562
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
-msgstr "Luminantia de referentia / papiro blanc: %1cd/m²"
+msgstr ""
 
-#: Main.qml:471
+#: ui/Main.qml:573
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
-msgstr "Suppone que applicationes de Windows HDR es calibrate per iste schermo"
+msgstr ""
 
-#: Main.qml:483
+#: ui/Main.qml:585
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "Facite"
 
-#: Main.qml:492
-#, kde-format
+#: ui/Main.qml:594
+#, fuzzy, kde-format
+#| msgctxt "@info accessible description of a push button"
+#| msgid "Cancels the calibration process"
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
-msgstr "Fini le processo de calibration"
+msgstr "Cancella le processo de calibration"
 
-#: Main.qml:501
+#: ui/Main.qml:602
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
 "this system wide configuration conflicts with. If this option is set, their "
 "calibration settings will work as expected on this specific display."
 msgstr ""
-"Multe applicationes de Windows veni con lor proprie preferentias de "
-"calibration, con le quales le large configuration de systema conflige. Si "
-"iste option es fixate, lor preferentias de calibration functionara como "
-"attendite sur iste specific monstrator."
-
-#~ msgid ""
-#~ "To determine the maximum average brightness of the screen, adjust the "
-#~ "slider until the logo is barely visible"
-#~ msgstr ""
-#~ "Per determinar le maxime brillantia medie del schermo, accomoda le "
-#~ "glissator usque le logo es apena visibile  "
-
-#~ msgid "Maximum fullscreen luminance: %1cd/m²"
-#~ msgstr "Maxime luminantia de schermo plen: %1cd/m²"

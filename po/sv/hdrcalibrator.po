@@ -1,13 +1,13 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kscreen package.
 #
-# SPDX-FileCopyrightText: 2025, 2026 Stefan Asserhäll <stefan.asserhall@gmail.com>
+# SPDX-FileCopyrightText: 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-07 00:46+0000\n"
-"PO-Revision-Date: 2026-07-01 16:35+0200\n"
+"POT-Creation-Date: 2026-01-15 00:44+0000\n"
+"PO-Revision-Date: 2025-11-21 01:45+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27,37 +27,37 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@gmail.com"
 
-#: hdrcalibrator.cpp:137 Main.qml:16
+#: hdrcalibrator.cpp:149 ui/Main.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "Kalibrering av stort dynamiskt omfång"
 
-#: Main.qml:188 Main.qml:366
+#: ui/Main.qml:195 ui/Main.qml:285 ui/Main.qml:458
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Nästa"
 
-#: Main.qml:195 Main.qml:372
+#: ui/Main.qml:202 ui/Main.qml:291 ui/Main.qml:464
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "Går till nästa sida"
 
-#: Main.qml:199 Main.qml:376 Main.qml:476
+#: ui/Main.qml:206 ui/Main.qml:295 ui/Main.qml:468 ui/Main.qml:578
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: Main.qml:202 Main.qml:379 Main.qml:479
+#: ui/Main.qml:209 ui/Main.qml:298 ui/Main.qml:471 ui/Main.qml:581
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "Avbryter kalibreringsprocessen"
 
-#: Main.qml:211
+#: ui/Main.qml:214
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
@@ -66,78 +66,70 @@ msgstr ""
 "För att bestämma skärmens maximala ljusstyrka, justera reglaget tills "
 "logotypen knappt syns"
 
-#: Main.qml:390
+#: ui/Main.qml:303
 #, kde-format
 msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth.\n"
+"To determine the maximum average brightness of the screen, adjust the slider "
+"until the logo is barely visible"
+msgstr ""
+"För att bestämma skärmens maximala medelljusstyrka, justera reglaget tills "
+"logotypen knappt syns"
+
+#: ui/Main.qml:480
+#, kde-format
+msgid ""
+"Configure how bright \"100%\" on the normal brightness slider should be. "
+"Make it as bright as you'd ever use it, as long as the HDR image still looks "
+"good and the gradients are smooth.\n"
 "To avoid brightness fluctuations, it's recommended to not exceed the "
 "display's maximum average brightness of %1cd/m²"
 msgstr ""
-"Ställ in vad ljusstyrkan “100 %” ska vara på reglaget för normal ljusstyrka. "
-"Gör den så ljus som du någonsin skulle använda den, så länge bilden med "
-"stort dynamiskt omfång fortfarande ser bra ut och toningar är jämna.\n"
+"Ställ in vad ljusstyrkan \"100 %\" ska vara på reglaget för normal "
+"ljusstyrka. Gör den så ljus som du någonsin skulle använda den, så länge "
+"bilden med stort dynamiskt omfång fortfarande ser bra ut och toningar är "
+"jämna.\n"
 "För att undvika ljusstyrkevariationer rekommenderas att inte överskrida "
 "skärmens maximala medelljusstyrka på %1 cd/m²."
 
-#: Main.qml:392
-#, kde-format
-msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth."
-msgstr ""
-"Ställ in vad ljusstyrkan “100 %” ska vara på reglaget för normal ljusstyrka. "
-"Gör den så ljus som du någonsin skulle använda den, så länge bilden med "
-"stort dynamiskt omfång fortfarande ser bra ut och toningar är jämna."
-
-#: Main.qml:439
+#: ui/Main.qml:518
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
-msgstr "Maximal ljusstyrka: %1 cd/m²"
+msgstr ""
 
-#: Main.qml:460
+#: ui/Main.qml:547
+#, kde-format
+msgid "Maximum fullscreen luminance: %1cd/m²"
+msgstr ""
+
+#: ui/Main.qml:562
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
-msgstr "Referensljusstyrka, pappersvit: %1 cd/m²"
+msgstr ""
 
-#: Main.qml:471
+#: ui/Main.qml:573
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
-msgstr "Anta att Windows HDR-program är kalibrerade för den här skärmen"
+msgstr ""
 
-#: Main.qml:483
+#: ui/Main.qml:585
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "Klar"
 
-#: Main.qml:492
-#, kde-format
+#: ui/Main.qml:594
+#, fuzzy, kde-format
+#| msgctxt "@info accessible description of a push button"
+#| msgid "Cancels the calibration process"
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
-msgstr "Slutför kalibreringsprocessen"
+msgstr "Avbryter kalibreringsprocessen"
 
-#: Main.qml:501
+#: ui/Main.qml:602
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
 "this system wide configuration conflicts with. If this option is set, their "
 "calibration settings will work as expected on this specific display."
 msgstr ""
-"Många Windows-program har sina egna kalibreringsinställningar, vilket den "
-"här systemomfattande inställning står i konflikt med. Om det här "
-"alternativet är aktiverat fungerar deras kalibreringsinställningar som "
-"förväntat på just den här skärmen."
-
-#~ msgid ""
-#~ "To determine the maximum average brightness of the screen, adjust the "
-#~ "slider until the logo is barely visible"
-#~ msgstr ""
-#~ "För att bestämma skärmens maximala medelljusstyrka, justera reglaget "
-#~ "tills logotypen knappt syns"
-
-#~ msgid "Maximum fullscreen luminance: %1cd/m²"
-#~ msgstr "Maximal fullskärmsljusstyrka: %1 cd/m²"
