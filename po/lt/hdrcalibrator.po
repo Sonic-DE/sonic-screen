@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-24 02:42+0000\n"
-"PO-Revision-Date: 2026-02-25 00:01+0200\n"
+"POT-Creation-Date: 2026-01-15 00:44+0000\n"
+"PO-Revision-Date: 2025-09-04 12:15+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.6\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -35,112 +35,107 @@ msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "HDR kalibravimas"
 
-#: ui/Main.qml:187 ui/Main.qml:365
+#: ui/Main.qml:195 ui/Main.qml:285 ui/Main.qml:458
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Kitas"
 
-#: ui/Main.qml:194 ui/Main.qml:371
+#: ui/Main.qml:202 ui/Main.qml:291 ui/Main.qml:464
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "Perjungia į kitą puslapį"
 
-#: ui/Main.qml:198 ui/Main.qml:375 ui/Main.qml:475
+#: ui/Main.qml:206 ui/Main.qml:295 ui/Main.qml:468 ui/Main.qml:578
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Atsisakyti"
 
-#: ui/Main.qml:201 ui/Main.qml:378 ui/Main.qml:478
+#: ui/Main.qml:209 ui/Main.qml:298 ui/Main.qml:471 ui/Main.qml:581
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "Nutraukia kalibravimo procesą"
 
-#: ui/Main.qml:210
+#: ui/Main.qml:214
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
 "the logo is barely visible"
 msgstr ""
-"Norėdami nustatyti, koks yra didžiausias ekrano ryškumas, reguliuokite "
+"Norėdami nustatyti ,koks yra didžiausias ekrano ryškumas, reguliuokite "
 "slinktuką tol, kol logotipas bus vos matomas"
 
-#: ui/Main.qml:389
-#, kde-format
+#: ui/Main.qml:303
+#, fuzzy, kde-format
+#| msgid ""
+#| "To determine the maximum brightness of the screen, adjust the slider "
+#| "until the logo is barely visible"
 msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth.\n"
+"To determine the maximum average brightness of the screen, adjust the slider "
+"until the logo is barely visible"
+msgstr ""
+"Norėdami nustatyti ,koks yra didžiausias ekrano ryškumas, reguliuokite "
+"slinktuką tol, kol logotipas bus vos matomas"
+
+#: ui/Main.qml:480
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure how bright \"100%\" on the normal brightness slider should be. "
+#| "Make it as bright as you'd ever use it, as long as the HDR image still "
+#| "looks good and the gradients are smooth."
+msgid ""
+"Configure how bright \"100%\" on the normal brightness slider should be. "
+"Make it as bright as you'd ever use it, as long as the HDR image still looks "
+"good and the gradients are smooth.\n"
 "To avoid brightness fluctuations, it's recommended to not exceed the "
 "display's maximum average brightness of %1cd/m²"
 msgstr ""
 "Konfigūruokite, koks įprastame ryškumo slinktuke turėtų būti įprastas „100%“ "
-"ryškumas. Padarykite jį tokį, kokį tik kada nors naudosite, bet tuo pačiu "
-"žiūrėkite, kad HDR paveikslas atrodytų gerai, o gradientai būtų glotnūs.\n"
-"Norint išvengti ryškumo svyravimų yra rekomenduojama neviršyti ekrano "
-"didžiausio %1cd/m² ryškumo vidurkio"
-
-#: ui/Main.qml:391
-#, kde-format
-msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth."
-msgstr ""
-"Konfigūruokite, koks įprastame ryškumo slinktuke turėtų būti įprastas „100%“ "
-"ryškumas. Padarykite jį tokį, kokį tik kada nors naudosite, bet tuo pačiu "
+"ryškumas. Padarykite jį tokiu, kokį tik kada nors naudosite, bet tuo pačiu "
 "žiūrėkite, kad HDR paveikslas atrodytų gerai, o gradientai būtų glotnūs."
 
-#: ui/Main.qml:438
+#: ui/Main.qml:518
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
-msgstr "Didžiausias skaistis: %1cd/m²"
+msgstr ""
 
-#: ui/Main.qml:459
+#: ui/Main.qml:547
+#, kde-format
+msgid "Maximum fullscreen luminance: %1cd/m²"
+msgstr ""
+
+#: ui/Main.qml:562
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
-msgstr "Etaloninis skaistis / popieriaus baltumas: %1cd/m²"
+msgstr ""
 
-#: ui/Main.qml:470
+#: ui/Main.qml:573
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
 msgstr ""
-"Numanyti, kad „Windows“ HDR programos yra kalibruotos naudojimui šiame ekrane"
 
-#: ui/Main.qml:482
+#: ui/Main.qml:585
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "Atlikta"
 
-#: ui/Main.qml:491
-#, kde-format
+#: ui/Main.qml:594
+#, fuzzy, kde-format
+#| msgctxt "@info accessible description of a push button"
+#| msgid "Cancels the calibration process"
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
-msgstr "Užbaigti kalibravimo procesą"
+msgstr "Nutraukia kalibravimo procesą"
 
-#: ui/Main.qml:500
+#: ui/Main.qml:602
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
 "this system wide configuration conflicts with. If this option is set, their "
 "calibration settings will work as expected on this specific display."
 msgstr ""
-"Daugelis „Windows“ programų yra pateikiamos su savo pačių kalibravimo "
-"nuostatomis, su kuriomis ši sistemos masto konfigūracija konfliktuoja. Jei "
-"ši parinktis yra pažymėta, tada tų programų kalibravimo nuostatos šiame "
-"konkrečiame ekrane veiks taip, kaip tikimasi."
-
-#~ msgid ""
-#~ "To determine the maximum average brightness of the screen, adjust the "
-#~ "slider until the logo is barely visible"
-#~ msgstr ""
-#~ "Norėdami nustatyti, koks yra didžiausias ekrano ryškumo vidurkis, "
-#~ "reguliuokite slinktuką tol, kol logotipas bus vos matomas"
-
-#~ msgid "Maximum fullscreen luminance: %1cd/m²"
-#~ msgstr "Didžiausias viso ekrano skaistis: %1cd/m²"

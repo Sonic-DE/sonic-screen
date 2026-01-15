@@ -1,16 +1,16 @@
 # Translation for hdrcalibrator.po to Euskara/Basque (eu).
-# Copyright (C) 2025-2026 This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kscreen package.
-# SPDX-FileCopyrightText: 2025, 2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
-# SPDX-FileCopyrightText: Iñigo Salvador Azurmendi <xalba@ni.eus>, 2025, 2026.
+# SPDX-FileCopyrightText: 2025 Iñigo Salvador Azurmendi <xalba@ni.eus>.
 msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-24 02:42+0000\n"
-"PO-Revision-Date: 2026-02-28 23:32+0100\n"
+"POT-Creation-Date: 2026-01-15 00:44+0000\n"
+"PO-Revision-Date: 2025-12-06 11:22+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -36,31 +36,31 @@ msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "HDR Kalibratzea"
 
-#: ui/Main.qml:187 ui/Main.qml:365
+#: ui/Main.qml:195 ui/Main.qml:285 ui/Main.qml:458
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: ui/Main.qml:194 ui/Main.qml:371
+#: ui/Main.qml:202 ui/Main.qml:291 ui/Main.qml:464
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "Hurrengo orrira aldatzen du"
 
-#: ui/Main.qml:198 ui/Main.qml:375 ui/Main.qml:475
+#: ui/Main.qml:206 ui/Main.qml:295 ui/Main.qml:468 ui/Main.qml:578
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Utzi"
 
-#: ui/Main.qml:201 ui/Main.qml:378 ui/Main.qml:478
+#: ui/Main.qml:209 ui/Main.qml:298 ui/Main.qml:471 ui/Main.qml:581
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "Kalibratzeko prozesua bertan behera uzten du"
 
-#: ui/Main.qml:210
+#: ui/Main.qml:214
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
@@ -69,78 +69,69 @@ msgstr ""
 "Pantailaren distira maximoa zehazteko, egokitu graduatzailea logoa nekez "
 "ikus daitekeen arte"
 
-#: ui/Main.qml:389
+#: ui/Main.qml:303
 #, kde-format
 msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth.\n"
+"To determine the maximum average brightness of the screen, adjust the slider "
+"until the logo is barely visible"
+msgstr ""
+"Pantailaren gehienezko batezbesteko distira zehazteko, egokitu graduatzailea "
+"logoa nekez ikus daitekeen arte"
+
+#: ui/Main.qml:480
+#, kde-format
+msgid ""
+"Configure how bright \"100%\" on the normal brightness slider should be. "
+"Make it as bright as you'd ever use it, as long as the HDR image still looks "
+"good and the gradients are smooth.\n"
 "To avoid brightness fluctuations, it's recommended to not exceed the "
 "display's maximum average brightness of %1cd/m²"
 msgstr ""
-"everKonfiguratu distira arruntaren graduatzailean “% 100” distira zein izan "
+"Konfiguratu distira arruntaren graduatzailean \"% 100\" distira zein izan "
 "behar duen. Egin ezazu erabiliko zenukeen bezain distiratsu, HDR irudia ondo "
 "ikusi eta gradienteak leunak diren bitartean.\n"
 "Distira fluktuazioak saihesteko, erakusleihoaren %1cd/m² gehienezko "
 "batezbesteko distira ez gainditzea gomendatzen da."
 
-#: ui/Main.qml:391
-#, kde-format
-msgid ""
-"Configure how bright “100%” on the normal brightness slider should be. Make "
-"it as bright as you'd ever use it, as long as the HDR image still looks good "
-"and the gradients are smooth."
-msgstr ""
-"Konfiguratu distira arruntaren graduatzailean “% 100” distira zein izan "
-"behar duen. Egin ezazu erabiliko zenukeen bezain distiratsu, HDR irudia ondo "
-"ikusi eta gradienteak leunak diren bitartean."
-
-#: ui/Main.qml:438
+#: ui/Main.qml:518
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
-msgstr "Gehienezko luminantzia: %1cd/m²"
+msgstr ""
 
-#: ui/Main.qml:459
+#: ui/Main.qml:547
+#, kde-format
+msgid "Maximum fullscreen luminance: %1cd/m²"
+msgstr ""
+
+#: ui/Main.qml:562
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
-msgstr "Erreferentziazko luminantzia / paper zuriarena: %1cd/m²"
+msgstr ""
 
-#: ui/Main.qml:470
+#: ui/Main.qml:573
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
 msgstr ""
-"Demagun Windows HDR aplikazioak pantaila honetarako kalibratuta daudela"
 
-#: ui/Main.qml:482
+#: ui/Main.qml:585
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "Eginda"
 
-#: ui/Main.qml:491
-#, kde-format
+#: ui/Main.qml:594
+#, fuzzy, kde-format
+#| msgctxt "@info accessible description of a push button"
+#| msgid "Cancels the calibration process"
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
-msgstr "Kalibratzeko prozesua bukatu"
+msgstr "Kalibratzeko prozesua bertan behera uzten du"
 
-#: ui/Main.qml:500
+#: ui/Main.qml:602
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
 "this system wide configuration conflicts with. If this option is set, their "
 "calibration settings will work as expected on this specific display."
 msgstr ""
-"Windows aplikazio askok beren kalibrazio-ezarpen propioak dituzte, eta "
-"sistema osorako konfigurazio honek haiekin gatazka du. Aukera hau ezarrita, "
-"gailu jakin honetan, haien kalibrazio ezarpenak espero bezala ibiliko dira."
-
-#~ msgid ""
-#~ "To determine the maximum average brightness of the screen, adjust the "
-#~ "slider until the logo is barely visible"
-#~ msgstr ""
-#~ "Pantailaren gehienezko batezbesteko distira zehazteko, egokitu "
-#~ "graduatzailea logoa nekez ikus daitekeen arte"
-
-#~ msgid "Maximum fullscreen luminance: %1cd/m²"
-#~ msgstr "Pantaila osoko gehienezko luminantzia: %1cd/m²"
