@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# SPDX-FileCopyrightText: 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024, 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
+# SPDX-FileCopyrightText: 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024, 2025, 2026 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-21 02:46+0000\n"
-"PO-Revision-Date: 2026-01-17 16:46+0100\n"
+"POT-Creation-Date: 2025-12-19 00:45+0000\n"
+"PO-Revision-Date: 2026-01-23 21:00+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #: kcm.cpp:148 kcm.cpp:170
 #, kde-format
@@ -66,30 +66,30 @@ msgstr "Identifiera bildskärmar"
 msgid "Keep display configuration?"
 msgstr "Behåll bildskärmsinställningen?"
 
-#: ui/main.qml:67
+#: ui/main.qml:65
 #, kde-format
 msgid "Will revert to previous configuration in %1 second."
 msgid_plural "Will revert to previous configuration in %1 seconds."
 msgstr[0] "Återställer till föregående inställning om %1 sekund."
 msgstr[1] "Återställer till föregående inställning om %1 sekunder."
 
-#: ui/main.qml:84
+#: ui/main.qml:82
 #, kde-format
 msgid "&Keep"
 msgstr "&Behåll"
 
-#: ui/main.qml:97
+#: ui/main.qml:95
 #, kde-format
 msgid "&Revert"
 msgstr "Åte&rställ"
 
-#: ui/main.qml:117
+#: ui/main.qml:115
 #, kde-format
 msgctxt "@info"
 msgid "All displays are disabled. Enable at least one."
 msgstr "Alla bildskärmar är inaktiverade. Aktivera minst en."
 
-#: ui/main.qml:119
+#: ui/main.qml:117
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -98,77 +98,77 @@ msgstr ""
 "Mellanrum mellan bildskärmar stöds inte. Säkerställ att alla bildskärmar rör "
 "vid varandra."
 
-#: ui/main.qml:124
+#: ui/main.qml:122
 #, kde-format
 msgctxt "The argument contains the reason for the failure"
 msgid "Couldn’t apply display configuration: %1"
 msgstr "Kunde inte verkställa bildskärmsinställning: %1"
 
-#: ui/main.qml:133
+#: ui/main.qml:131
 #, kde-format
 msgid "A new output has been added. Settings have been reloaded."
 msgstr "En ny utgång har lagts till. Inställningar har lästs in igen."
 
-#: ui/main.qml:135
+#: ui/main.qml:133
 #, kde-format
 msgid "An output has been removed. Settings have been reloaded."
 msgstr "En ny utgång har tagits bort. Inställningar har lästs in igen."
 
-#: ui/main.qml:189
+#: ui/main.qml:187
 #, kde-format
 msgid "No KScreen backend found. Please check your KScreen installation."
 msgstr ""
 "Inget KScreen-gränssnitt hittades. Kontrollera installationen av KScreen."
 
-#: ui/main.qml:198
+#: ui/main.qml:196
 #, kde-format
 msgid "Outputs could not be saved due to error."
 msgstr "Utgångar kunde inte sparas på grund av fel."
 
-#: ui/main.qml:207
+#: ui/main.qml:205
 #, kde-format
 msgid ""
 "Global scale changes will come into effect after the system is restarted."
 msgstr "Globala skalningsändringar verkställs efter systemet har startats om."
 
-#: ui/main.qml:213
+#: ui/main.qml:211
 #, kde-format
 msgid "Restart"
 msgstr "Starta om"
 
-#: ui/main.qml:231
+#: ui/main.qml:229
 #, kde-format
 msgid "Display configuration reverted."
 msgstr "Bildskärmsinställning återställd."
 
-#: ui/main.qml:245
+#: ui/main.qml:243
 #, kde-format
 msgctxt "@title:window"
 msgid "Change Priorities"
 msgstr "Ändra prioriteter"
 
-#: ui/main.qml:275 ui/OutputPanel.qml:48
+#: ui/main.qml:273 ui/OutputPanel.qml:48
 #, kde-format
 msgid "Primary"
 msgstr "Huvudskärm"
 
-#: ui/main.qml:280
+#: ui/main.qml:278
 #, kde-format
 msgid "Raise priority"
 msgstr "Öka prioritet"
 
-#: ui/main.qml:290
+#: ui/main.qml:288
 #, kde-format
 msgid "Lower priority"
 msgstr "Sänk prioritet"
 
-#: ui/main.qml:402
+#: ui/main.qml:400
 #, kde-format
 msgctxt "@action:button Shrink the height of a view"
 msgid "Collapse"
 msgstr "Dra ihop"
 
-#: ui/main.qml:403
+#: ui/main.qml:401
 #, kde-format
 msgctxt "@action:button Edit the arrangement of display outputs"
 msgid "Edit Arrangement"
@@ -452,31 +452,31 @@ msgctxt "@action:button"
 msgid "Calibrate HDR Brightness…"
 msgstr "Kalibrera ljusstyrka för stort dynamiskt omfång…"
 
-#: ui/OutputPanel.qml:386
+#: ui/OutputPanel.qml:385
 #, kde-format
 msgid "Opens a window to calibrate HDR brightness"
 msgstr ""
 "Öppnar ett fönster för att kalibrera ljusstyrka för stort dynamiskt omfång"
 
-#: ui/OutputPanel.qml:393
+#: ui/OutputPanel.qml:392
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Color accuracy:"
 msgstr "Färgnoggrannhet:"
 
-#: ui/OutputPanel.qml:402
+#: ui/OutputPanel.qml:401
 #, kde-format
 msgctxt "@item:inlistbox tradeoff between efficiency and color accuracy"
 msgid "Prefer efficiency"
 msgstr "Föredra effektivitet"
 
-#: ui/OutputPanel.qml:403
+#: ui/OutputPanel.qml:402
 #, kde-format
 msgctxt "@item:inlistbox tradeoff between efficiency and color accuracy"
 msgid "Prefer color accuracy"
 msgstr "Föredra färgnoggrannhet"
 
-#: ui/OutputPanel.qml:413
+#: ui/OutputPanel.qml:412
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -489,7 +489,7 @@ msgstr ""
 "färgupplösningen.<nl/><nl/>Observera att inställningen kan ha stor inverkan "
 "på prestanda."
 
-#: ui/OutputPanel.qml:420
+#: ui/OutputPanel.qml:419
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -501,31 +501,31 @@ msgstr ""
 "förbättrar prestandan till priset av färgnoggrannhet.<nl/><nl/>Observera att "
 "inställningen kan ha stor inverkan på prestanda."
 
-#: ui/OutputPanel.qml:428
+#: ui/OutputPanel.qml:427
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Limit color resolution to:"
 msgstr "Begränsa färgupplösning till:"
 
-#: ui/OutputPanel.qml:449
+#: ui/OutputPanel.qml:448
 #, kde-format
 msgctxt "@item:inlistbox color resolution"
 msgid "Automatic  (%1 bits per color)"
 msgstr "Automatisk (%1 bitar per färg)"
 
-#: ui/OutputPanel.qml:451 ui/OutputPanel.qml:464
+#: ui/OutputPanel.qml:450 ui/OutputPanel.qml:463
 #, kde-format
 msgctxt "@item:inlistbox color resolution"
 msgid "%1 bits per color"
 msgstr "%1 bitar per färg"
 
-#: ui/OutputPanel.qml:462
+#: ui/OutputPanel.qml:461
 #, kde-format
 msgctxt "@item:inlistbox color resolution"
 msgid "Automatic (%1 bits per color)"
 msgstr "Automatisk (%1 bitar per färg)"
 
-#: ui/OutputPanel.qml:474
+#: ui/OutputPanel.qml:473
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -542,7 +542,7 @@ msgstr ""
 "dockningsproblem.<nl/><nl/>På grund av begränsningar i grafikdrivrutinen kan "
 "den faktiskt använda upplösningen inte avgöras."
 
-#: ui/OutputPanel.qml:478
+#: ui/OutputPanel.qml:477
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -558,37 +558,37 @@ msgstr ""
 "grafikdrivrutinen.<nl/><nl/>På grund av begränsningar i grafikdrivrutinen "
 "kan den faktiskt använda upplösningen inte avgöras."
 
-#: ui/OutputPanel.qml:493
+#: ui/OutputPanel.qml:492
 #, kde-format
 msgctxt "@label"
 msgid "sRGB color intensity:"
 msgstr "sRGB-färgintensitet:"
 
-#: ui/OutputPanel.qml:524
+#: ui/OutputPanel.qml:523
 #, kde-format
 msgctxt "Color intensity factor expressed in percentage form"
 msgid "%1%"
 msgstr "%1 %"
 
-#: ui/OutputPanel.qml:532
+#: ui/OutputPanel.qml:531
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Increases the intensity of sRGB content on the screen."
 msgstr "Ökar intensiteten för sRGB-innehåll på skärmen."
 
-#: ui/OutputPanel.qml:541
+#: ui/OutputPanel.qml:540
 #, kde-format
 msgctxt "@label"
 msgid "Brightness:"
 msgstr "Ljusstyrka:"
 
-#: ui/OutputPanel.qml:547
+#: ui/OutputPanel.qml:546
 #, kde-format
 msgctxt "@option:check"
 msgid "Control hardware brightness with DDC/CI"
 msgstr "Styr maskinvarans ljusstyrka med DDC/CI"
 
-#: ui/OutputPanel.qml:553
+#: ui/OutputPanel.qml:552
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -600,18 +600,18 @@ msgstr ""
 "för att justera skärmens ljusstyrka med skrivbordskontroller, som om man "
 "använder skärmens egna maskinvaruknappar och skärmmeny."
 
-#: ui/OutputPanel.qml:587
+#: ui/OutputPanel.qml:586
 #, kde-format
 msgctxt "Brightness expressed in percentage form"
 msgid "%1%"
 msgstr "%1 %"
 
-#: ui/OutputPanel.qml:601
+#: ui/OutputPanel.qml:600
 #, kde-format
 msgid "Automatically adapt to environment"
 msgstr "Anpassa automatiskt till omgivningen"
 
-#: ui/OutputPanel.qml:606
+#: ui/OutputPanel.qml:605
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -624,25 +624,25 @@ msgstr ""
 "som detekteras av apparatens omgivningsljussensor. Om du justerar "
 "ljusstyrkan manuellt kommer justeringarna att kommas ihåg och beaktas."
 
-#: ui/OutputPanel.qml:618
+#: ui/OutputPanel.qml:617
 #, kde-format
 msgctxt "@label"
 msgid "Sharpness:"
 msgstr "Skärpa:"
 
-#: ui/OutputPanel.qml:647
+#: ui/OutputPanel.qml:646
 #, kde-format
 msgctxt "@label"
 msgid "Extended Dynamic Range:"
 msgstr "Utökat dynamiskt omfång:"
 
-#: ui/OutputPanel.qml:652
+#: ui/OutputPanel.qml:651
 #, kde-format
 msgctxt "@option:check"
 msgid "Enable EDR"
 msgstr "Aktivera utökat dynamiskt omfång"
 
-#: ui/OutputPanel.qml:658
+#: ui/OutputPanel.qml:657
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -655,7 +655,7 @@ msgstr ""
 "justera bakgrundsbelysningen.<nl/><nl/>Observera att det ökar "
 "batteriförbrukningen när du tittar på innehåll med stort dynamiskt omfång."
 
-#: ui/OutputPanel.qml:663
+#: ui/OutputPanel.qml:662
 #, kde-format
 msgid "Replica of:"
 msgstr "Kopia av:"
