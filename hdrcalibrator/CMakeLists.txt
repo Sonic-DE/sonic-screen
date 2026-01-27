@@ -6,10 +6,14 @@ ecm_add_qml_module(hdrcalibrator URI org.kde.hdrcalibrator GENERATE_PLUGIN_SOURC
 
 ecm_target_qml_sources(hdrcalibrator
     SOURCES
-        Main.qml
+        ui/Main.qml
     RESOURCES
-        graz.avif
-        plasma-symbolic.svg
+        ui/images/graz.avif
+        ui/images/plasma-symbolic.svg
+)
+
+qt6_generate_wayland_protocol_client_sources(hdrcalibrator
+    FILES ${WaylandProtocols_DATADIR}/staging/color-management/color-management-v1.xml
 )
 
 target_sources(hdrcalibrator PUBLIC
@@ -25,6 +29,7 @@ target_link_libraries(hdrcalibrator PUBLIC
     KF6::I18nQml
     KF6::Screen
     Qt::Qml
+    Qt::WaylandClient
     Qt::GuiPrivate
     Qt::QuickControls2
     Qt::DBus
