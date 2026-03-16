@@ -13,10 +13,6 @@ qt_add_qml_module(hdrcalibrator
         QtQuick
 )
 
-qt6_generate_wayland_protocol_client_sources(hdrcalibrator
-    FILES ${WaylandProtocols_DATADIR}/staging/color-management/color-management-v1.xml
-)
-
 target_sources(hdrcalibrator PUBLIC
     hdrcalibrator.cpp
     hdrhelper.cpp
@@ -29,7 +25,6 @@ target_link_libraries(hdrcalibrator PUBLIC
     KF6::I18n
     KF6::I18nQml
     KF6::Screen
-    Qt::WaylandClient
     Qt::GuiPrivate
     Qt::QuickControls2
     Qt::DBus

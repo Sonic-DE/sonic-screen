@@ -30,13 +30,11 @@ class KCMKScreen : public KQuickManagedConfigModule
     Q_PROPERTY(bool backendReady READ backendReady NOTIFY backendReadyChanged)
     Q_PROPERTY(bool screenNormalized READ screenNormalized NOTIFY screenNormalizedChanged)
     Q_PROPERTY(bool perOutputScaling READ perOutputScaling NOTIFY perOutputScalingChanged)
-    Q_PROPERTY(bool xwaylandClientsScaleSupported READ xwaylandClientsScaleSupported NOTIFY xwaylandClientsScaleSupportedChanged)
     Q_PROPERTY(bool primaryOutputSupported READ primaryOutputSupported NOTIFY primaryOutputSupportedChanged)
     Q_PROPERTY(bool outputReplicationSupported READ outputReplicationSupported NOTIFY outputReplicationSupportedChanged)
     Q_PROPERTY(bool tearingSupported READ tearingSupported NOTIFY tearingSupportedChanged)
     Q_PROPERTY(qreal globalScale READ globalScale WRITE setGlobalScale NOTIFY globalScaleChanged)
     Q_PROPERTY(bool tabletModeAvailable READ tabletModeAvailable NOTIFY tabletModeAvailableChanged)
-    Q_PROPERTY(bool xwaylandClientsScale READ xwaylandClientsScale WRITE setXwaylandClientsScale NOTIFY xwaylandClientsScaleChanged)
     Q_PROPERTY(bool tearingAllowed READ allowTearing WRITE setAllowTearing NOTIFY tearingAllowedChanged)
     Q_PROPERTY(bool multipleScreensAvailable READ multipleScreensAvailable NOTIFY multipleScreensAvailableChanged)
 
@@ -70,10 +68,6 @@ public:
 
     qreal globalScale() const;
     void setGlobalScale(qreal scale);
-
-    bool xwaylandClientsScale() const;
-    void setXwaylandClientsScale(bool scale);
-    bool xwaylandClientsScaleSupported() const;
 
     void setAllowTearing(bool allow);
     bool allowTearing() const;
@@ -110,8 +104,6 @@ Q_SIGNALS:
     void outputConnect(bool connected);
     void settingsReverted();
     void showRevertWarning();
-    void xwaylandClientsScaleChanged();
-    void xwaylandClientsScaleSupportedChanged();
     void tearingSupportedChanged();
     void tearingAllowedChanged();
     void multipleScreensAvailableChanged();

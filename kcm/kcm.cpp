@@ -91,7 +91,6 @@ void KCMKScreen::configReady(ConfigOperation *op)
     setBackendReady(true);
     checkConfig();
     Q_EMIT perOutputScalingChanged();
-    Q_EMIT xwaylandClientsScaleSupportedChanged();
     Q_EMIT tearingSupportedChanged();
     Q_EMIT primaryOutputSupportedChanged();
     Q_EMIT outputReplicationSupportedChanged();
@@ -343,7 +342,6 @@ void KCMKScreen::load()
     m_outputProxyModel->setSourceModel(m_configHandler->outputModel());
 
     Q_EMIT perOutputScalingChanged();
-    Q_EMIT xwaylandClientsScaleSupportedChanged();
     Q_EMIT tearingSupportedChanged();
     Q_EMIT tearingAllowedChanged();
 
@@ -489,25 +487,6 @@ void KCMKScreen::setGlobalScale(qreal scale)
     Q_EMIT changed();
 }
 
-bool KCMKScreen::xwaylandClientsScale() const
-{
-    return GlobalScaleSettings::self()->xwaylandClientsScale();
-}
-
-void KCMKScreen::setXwaylandClientsScale(bool scale)
-{
-    GlobalScaleSettings::self()->setXwaylandClientsScale(scale);
-    Q_EMIT changed();
-}
-
-bool KCMKScreen::xwaylandClientsScaleSupported() const
-{
-    if (!m_configHandler || !m_configHandler->config()) {
-        return false;
-    }
-    return m_configHandler->config()->supportedFeatures().testFlag(Config::Feature::XwaylandScales);
-}
-
 void KCMKScreen::setAllowTearing(bool allow)
 {
     if (KWinCompositingSetting::self()->allowTearing() == allow) {
@@ -525,11 +504,7 @@ bool KCMKScreen::allowTearing() const
 
 bool KCMKScreen::tearingSupported() const
 {
-    if (!m_configHandler || !m_configHandler->config()) {
-        return false;
-    }
-    // == is Wayland
-    return m_configHandler->config()->supportedFeatures().testFlag(Config::Feature::XwaylandScales);
+    return true;
 }
 
 bool KCMKScreen::multipleScreensAvailable() const

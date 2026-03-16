@@ -8,8 +8,6 @@
 #include <QObject>
 #include <QPointer>
 #include <QQmlEngine>
-#include <QWaylandClientExtensionTemplate>
-#include <qwayland-color-management-v1.h>
 #include <unordered_map>
 
 class QQuickWindow;
@@ -55,33 +53,28 @@ private:
     std::unordered_map<QQuickWindow *, WindowParams> m_surfaces;
 };
 
-class ColorManagementGlobal : public QWaylandClientExtensionTemplate<ColorManagementGlobal, &QtWayland::wp_color_manager_v1::destroy>,
-                              public QtWayland::wp_color_manager_v1
+class ColorManagementGlobal
 {
 public:
     explicit ColorManagementGlobal();
 };
 
-class ColorManagementSurface : public QObject, public QtWayland::wp_color_management_surface_v1
+class ColorManagementSurface : public QObject
 {
     Q_OBJECT
 public:
-    explicit ColorManagementSurface(::wp_color_management_surface_v1 *obj);
+    explicit ColorManagementSurface(void *obj);
     ~ColorManagementSurface() override;
-
-    void setImageDescription(::wp_image_description_v1 *descr);
 };
 
-class PendingImageDescription : public QtWayland::wp_image_description_v1
+class PendingImageDescription
 {
 public:
     explicit PendingImageDescription(QQuickWindow *window,
                                      ColorManagementSurface *surface,
-                                     ::wp_image_description_v1 *descr,
+                                     void *descr,
                                      HdrHelper::RenderIntent renderIntent);
     ~PendingImageDescription();
-
-    void wp_image_description_v1_ready(uint32_t identity) override;
 
     QPointer<QQuickWindow> m_window;
     QPointer<ColorManagementSurface> m_surface;

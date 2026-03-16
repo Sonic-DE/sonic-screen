@@ -106,13 +106,8 @@ ColumnLayout {
             }
         }
 
-        QQC2.ButtonGroup {
-            id: x11AppsScaling
-            onClicked: kcm.xwaylandClientsScale = (button === x11ScalingApps)
-        }
-
         RowLayout {
-            visible: kcm.xwaylandClientsScaleSupported
+            visible: true
 
             Kirigami.FormData.label: i18n("Legacy applications (X11):")
             spacing: Kirigami.Units.smallSpacing
@@ -120,7 +115,7 @@ ColumnLayout {
             QQC2.RadioButton {
                 id: x11ScalingApps
                 text: i18nc("The apps themselves should scale to fit the displays", "Apply scaling themselves")
-                checked: kcm.xwaylandClientsScale
+                checked: false
                 QQC2.ButtonGroup.group: x11AppsScaling
             }
             Kirigami.ContextualHelpButton {
@@ -129,14 +124,14 @@ ColumnLayout {
         }
 
         RowLayout {
-            visible: kcm.xwaylandClientsScaleSupported
+            visible: true
 
             spacing: Kirigami.Units.smallSpacing
 
             QQC2.RadioButton {
                 Kirigami.FormData.label: i18n("Legacy applications (X11):")
                 text: i18nc("The system will perform the x11 apps scaling", "Scaled by the system")
-                checked: !kcm.xwaylandClientsScale
+                checked: true
                 QQC2.ButtonGroup.group: x11AppsScaling
             }
             Kirigami.ContextualHelpButton {
@@ -159,7 +154,7 @@ ColumnLayout {
 
         Item {
             Kirigami.FormData.isSection: false
-            visible: kcm.xwaylandClientsScaleSupported
+            visible: true
         }
 
         Kirigami.InlineMessage {
