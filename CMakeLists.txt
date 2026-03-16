@@ -75,9 +75,6 @@ set_package_properties(WaylandProtocols PROPERTIES
     URL "https://gitlab.freedesktop.org/wayland/wayland-protocols/"
 )
 
-option(WITH_X11 "Enable X11 support" ON)
-
-if(WITH_X11)
     find_package(X11)
     set_package_properties(X11 PROPERTIES
         DESCRIPTION "X11 libraries"
@@ -87,7 +84,6 @@ if(WITH_X11)
     )
     find_package(X11_XCB REQUIRED)
     find_package(XCB REQUIRED COMPONENTS XCB ATOM)
-endif()
 
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 

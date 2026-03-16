@@ -29,16 +29,13 @@
 #include <QTimer>
 #include <QTransform>
 
-#if WITH_X11
 #include <X11/Xatom.h>
 #include <X11/Xlib-xcb.h>
 #include <X11/extensions/XInput.h>
 #include <X11/extensions/XInput2.h>
-#endif
 
 K_PLUGIN_CLASS_WITH_JSON(KScreenDaemon, "kscreen.json")
 
-#if WITH_X11
 struct DeviceListDeleter {
     void operator()(XDeviceInfo *p)
     {
@@ -56,7 +53,6 @@ struct XDeleter {
         }
     }
 };
-#endif
 
 KScreenDaemon::KScreenDaemon(QObject *parent, const QList<QVariant> &)
     : KDEDModule(parent)
@@ -247,12 +243,9 @@ void KScreenDaemon::configChanged()
         connect(m_saveTimer, &QTimer::timeout, this, &KScreenDaemon::saveCurrentConfig);
     }
     m_saveTimer->start();
-#if WITH_X11
     alignX11TouchScreen();
-#endif
 }
 
-#if WITH_X11
 void KScreenDaemon::alignX11TouchScreen()
 {
     if (qGuiApp->platformName() != QStringLiteral("xcb")) {
@@ -403,7 +396,6 @@ void KScreenDaemon::alignX11TouchScreen()
         break;
     }
 }
-#endif
 
 void KScreenDaemon::saveCurrentConfig()
 {

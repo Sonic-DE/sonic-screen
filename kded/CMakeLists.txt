@@ -30,10 +30,7 @@ target_link_libraries(kscreen PRIVATE
                               KF6::XmlGui
 )
 
-if(WITH_X11)
-    target_link_libraries(kscreen PRIVATE X11::X11 X11::Xi X11::XCB XCB::ATOM)
-endif()
-
+target_link_libraries(kscreen PRIVATE X11::X11 X11::Xi X11::XCB XCB::ATOM)
 
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/kscreen.json.in
                ${CMAKE_CURRENT_BINARY_DIR}/kscreen.json
