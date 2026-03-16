@@ -131,11 +131,7 @@ void Console::printJSONConfig()
 
 void Console::printSerializations()
 {
-    if (KWindowSystem::isPlatformWayland()) {
-        QFile file(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QLatin1String("/kwinoutputconfig.json"));
-        file.open(QFile::ReadOnly);
-        qDebug().noquote() << file.readAll();
-    } else {
+    {
         QString path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/kscreen/");
         qDebug() << "Configs in: " << path;
 

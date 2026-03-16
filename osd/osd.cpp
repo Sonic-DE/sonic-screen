@@ -66,15 +66,7 @@ void Osd::showActionSelector()
         QMetaObject::invokeMethod(m_osdActionSelector->rootObject(), "moveRight");
     }
 
-    if (KWindowSystem::isPlatformWayland()) {
-        auto layerWindow = LayerShellQt::Window::get(m_osdActionSelector.get());
-        layerWindow->setScope(QStringLiteral("on-screen-display"));
-        layerWindow->setLayer(LayerShellQt::Window::LayerOverlay);
-        layerWindow->setAnchors({});
-        layerWindow->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
-        m_osdActionSelector->setScreen(screen);
-        m_osdActionSelector->setVisible(true);
-    } else {
+    {
         auto newGeometry = m_osdActionSelector->geometry();
         newGeometry.moveCenter(screen->geometry().center());
         KX11Extras::setState(m_osdActionSelector->winId(), NET::SkipPager | NET::SkipSwitcher | NET::SkipTaskbar);
