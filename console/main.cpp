@@ -1,3 +1,4 @@
+
 /*
     SPDX-FileCopyrightText: 2012 Alejandro Fiestas Olivares <afiestas@kde.org>
 
@@ -47,7 +48,7 @@ void configReceived(KScreen::ConfigOperation *op)
     } else if (command == QLatin1String("config")) {
         console->printSerializations();
     } else if (command == QLatin1String("bug")) {
-        if (!KWindowSystem::isPlatformWayland()) {
+        {
             QTextStream(stdout) << QStringLiteral("\n========================xrandr --verbose==========================\n");
             QProcess proc;
             proc.setProcessChannelMode(QProcess::MergedChannels);
