@@ -46,9 +46,7 @@ private:
     void applyIdealConfig();
     void configChanged();
     void saveCurrentConfig();
-#if WITH_X11
     void alignX11TouchScreen();
-#endif
     void lidClosedChanged(bool lidIsClosed);
     void disableLidOutput();
     void setMonitorForChanges(bool enabled);

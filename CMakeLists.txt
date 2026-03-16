@@ -67,19 +67,15 @@ set_package_properties(LayerShellQt PROPERTIES
     TYPE REQUIRED
 )
 
-option(WITH_X11 "Enable X11 support" ON)
-
-if(WITH_X11)
-    find_package(X11)
-    set_package_properties(X11 PROPERTIES
-        DESCRIPTION "X11 libraries"
-        URL "https://www.x.org"
-        PURPOSE "Required for touchscreen XInput mapping to internal display"
-        TYPE REQUIRED
-    )
-    find_package(X11_XCB REQUIRED)
-    find_package(XCB REQUIRED COMPONENTS XCB ATOM)
-endif()
+find_package(X11)
+set_package_properties(X11 PROPERTIES
+    DESCRIPTION "X11 libraries"
+    URL "https://www.x.org"
+    PURPOSE "Required for touchscreen XInput mapping to internal display"
+    TYPE REQUIRED
+)
+find_package(X11_XCB REQUIRED)
+find_package(XCB REQUIRED COMPONENTS XCB ATOM)
 
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 
