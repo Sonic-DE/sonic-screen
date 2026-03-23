@@ -9,8 +9,6 @@
 
 #include <KScreen/Mode>
 
-#include <LayerShellQt/Window>
-
 #include <KWindowSystem>
 #include <KX11Extras>
 

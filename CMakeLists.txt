@@ -59,14 +59,6 @@ find_package(KF6Screen ${PROJECT_DEP_VERSION} REQUIRED)
 find_package(Plasma ${PROJECT_DEP_VERSION} REQUIRED)
 find_package(PlasmaQuick ${PROJECT_DEP_VERSION} REQUIRED)
 
-find_package(LayerShellQt)
-set_package_properties(LayerShellQt PROPERTIES
-    DESCRIPTION "Layer shell Qt bindings"
-    URL "https://invent.kde.org/plasma/layer-shell-qt"
-    PURPOSE "Required for the screen selection osd"
-    TYPE REQUIRED
-)
-
 find_package(X11)
 set_package_properties(X11 PROPERTIES
     DESCRIPTION "X11 libraries"
