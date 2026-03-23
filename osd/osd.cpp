@@ -70,8 +70,8 @@ void Osd::showActionSelector()
         KX11Extras::setState(m_osdActionSelector->winId(), NET::SkipPager | NET::SkipSwitcher | NET::SkipTaskbar);
         KX11Extras::setType(m_osdActionSelector->winId(), NET::OnScreenDisplay);
         m_osdActionSelector->setVisible(true);
-        // Workaround wrong geometry by setting geometry after it is visible, not before.
-        // Because KWin replace OSD at lower area of the screen.
+        // Workaround wrong geometry by setting geometry after it is visible, not
+        // before. Because KWin replace OSD at lower area of the screen.
         m_osdActionSelector->setGeometry(newGeometry);
         m_osdActionSelector->requestActivate();
     }
