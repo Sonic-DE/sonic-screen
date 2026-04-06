@@ -13,6 +13,7 @@ target_link_libraries(kscreen_osd_service PRIVATE
     KF6::WindowSystem
     KF6::Screen
     Plasma::Plasma
+    LayerShellQt::Interface
 )
 
 install(TARGETS kscreen_osd_service DESTINATION ${KDE_INSTALL_LIBEXECDIR})
