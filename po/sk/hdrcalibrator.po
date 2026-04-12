@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-07 00:46+0000\n"
+"POT-Creation-Date: 2026-02-24 00:47+0000\n"
 "PO-Revision-Date: 2026-04-11 12:00+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -27,37 +27,37 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
-#: hdrcalibrator.cpp:137 Main.qml:16
+#: hdrcalibrator.cpp:149 Main.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "Kalibrácia HDR"
 
-#: Main.qml:188 Main.qml:366
+#: Main.qml:187 Main.qml:365
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Ďalej"
 
-#: Main.qml:195 Main.qml:372
+#: Main.qml:194 Main.qml:371
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "Prepne na ďalšiu stranu"
 
-#: Main.qml:199 Main.qml:376 Main.qml:476
+#: Main.qml:198 Main.qml:375 Main.qml:475
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: Main.qml:202 Main.qml:379 Main.qml:479
+#: Main.qml:201 Main.qml:378 Main.qml:478
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "Zruší proces kalibrácie"
 
-#: Main.qml:211
+#: Main.qml:210
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
@@ -66,7 +66,7 @@ msgstr ""
 "Na určenie maximálneho jasu obrazovky upravte posuvník, kým logo nebude len "
 "sotva viditeľné"
 
-#: Main.qml:390
+#: Main.qml:389
 #, kde-format
 msgid ""
 "Configure how bright “100%” on the normal brightness slider should be. Make "
@@ -81,7 +81,7 @@ msgstr ""
 "Aby sa predišlo kolísaniu jasu, odporúča sa neprekračovať maximálny "
 "priemerný jas displeja %1cd/m²"
 
-#: Main.qml:392
+#: Main.qml:391
 #, kde-format
 msgid ""
 "Configure how bright “100%” on the normal brightness slider should be. Make "
@@ -92,36 +92,36 @@ msgstr ""
 "jas tak vysoko, ako by ste ho kedy používali, pokiaľ HDR obraz stále vyzerá "
 "dobre a prechody sú plynulé."
 
-#: Main.qml:439
+#: Main.qml:438
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
 msgstr "Maximálna svietivosť: %1cd/m²"
 
-#: Main.qml:460
+#: Main.qml:459
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
 msgstr "Referenčná svietivosť / biela papiera: %1cd/m²"
 
-#: Main.qml:471
+#: Main.qml:470
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
 msgstr ""
 "Predpokladať, že aplikácie Windows HDR sú kalibrované pre túto obrazovku"
 
-#: Main.qml:483
+#: Main.qml:482
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "Hotovo"
 
-#: Main.qml:492
+#: Main.qml:491
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
 msgstr "Dokončí proces kalibrácie"
 
-#: Main.qml:501
+#: Main.qml:500
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
