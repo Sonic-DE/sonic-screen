@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kscreen\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-24 02:42+0000\n"
-"PO-Revision-Date: 2026-04-12 12:00+0200\n"
+"POT-Creation-Date: 2026-02-24 00:47+0000\n"
+"PO-Revision-Date: 2026-04-11 12:00+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
 "Language: sk\n"
@@ -27,37 +27,37 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
-#: hdrcalibrator.cpp:149 ui/Main.qml:15
+#: hdrcalibrator.cpp:149 Main.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "HDR Calibration"
 msgstr "Kalibrácia HDR"
 
-#: ui/Main.qml:187 ui/Main.qml:365
+#: Main.qml:187 Main.qml:365
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Ďalej"
 
-#: ui/Main.qml:194 ui/Main.qml:371
+#: Main.qml:194 Main.qml:371
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Switches to the next page"
 msgstr "Prepne na ďalšiu stranu"
 
-#: ui/Main.qml:198 ui/Main.qml:375 ui/Main.qml:475
+#: Main.qml:198 Main.qml:375 Main.qml:475
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: ui/Main.qml:201 ui/Main.qml:378 ui/Main.qml:478
+#: Main.qml:201 Main.qml:378 Main.qml:478
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Cancels the calibration process"
 msgstr "Zruší proces kalibrácie"
 
-#: ui/Main.qml:210
+#: Main.qml:210
 #, kde-format
 msgid ""
 "To determine the maximum brightness of the screen, adjust the slider until "
@@ -66,7 +66,7 @@ msgstr ""
 "Na určenie maximálneho jasu obrazovky upravte posuvník, kým logo nebude len "
 "sotva viditeľné"
 
-#: ui/Main.qml:389
+#: Main.qml:389
 #, kde-format
 msgid ""
 "Configure how bright “100%” on the normal brightness slider should be. Make "
@@ -81,7 +81,7 @@ msgstr ""
 "Aby sa predišlo kolísaniu jasu, odporúča sa neprekračovať maximálny "
 "priemerný jas displeja %1cd/m²"
 
-#: ui/Main.qml:391
+#: Main.qml:391
 #, kde-format
 msgid ""
 "Configure how bright “100%” on the normal brightness slider should be. Make "
@@ -92,36 +92,36 @@ msgstr ""
 "jas tak vysoko, ako by ste ho kedy používali, pokiaľ HDR obraz stále vyzerá "
 "dobre a prechody sú plynulé."
 
-#: ui/Main.qml:438
+#: Main.qml:438
 #, kde-format
 msgid "Maximum luminance: %1cd/m²"
 msgstr "Maximálna svietivosť: %1cd/m²"
 
-#: ui/Main.qml:459
+#: Main.qml:459
 #, kde-format
 msgid "Reference luminance / paper white: %1cd/m²"
 msgstr "Referenčná svietivosť / biela papiera: %1cd/m²"
 
-#: ui/Main.qml:470
+#: Main.qml:470
 #, kde-format
 msgctxt "@action:checkbox"
 msgid "Assume Windows HDR applications are calibrated for this screen"
 msgstr ""
 "Predpokladať, že aplikácie Windows HDR sú kalibrované pre túto obrazovku"
 
-#: ui/Main.qml:482
+#: Main.qml:482
 #, kde-format
 msgctxt "@action:button"
 msgid "Done"
 msgstr "Hotovo"
 
-#: ui/Main.qml:491
+#: Main.qml:491
 #, kde-format
 msgctxt "@info accessible description of a push button"
 msgid "Finish the calibration process"
 msgstr "Dokončí proces kalibrácie"
 
-#: ui/Main.qml:500
+#: Main.qml:500
 #, kde-format
 msgid ""
 "Many Windows applications come with their own calibration settings, which "
@@ -132,3 +132,25 @@ msgstr ""
 "ktorými je táto celosystémová konfigurácia v konflikte. Ak je táto možnosť "
 "nastavená, ich nastavenia kalibrácie budú fungovať podľa očakávania na tomto "
 "konkrétnom displeji."
+
+#~ msgid ""
+#~ "Configure how bright “100%” on the normal brightness slider should be. "
+#~ "Make it as bright as you’d ever use it, as long as the HDR image still "
+#~ "looks good and the gradients are smooth.\n"
+#~ "To avoid brightness fluctuations, it’s recommended to not exceed the "
+#~ "display’s maximum average brightness of %1cd/m²"
+#~ msgstr ""
+#~ "Nastavte, ako jasná by mala byť „100%“ na bežnom posuvníku jasu. Nastavte "
+#~ "jas tak vysoko, ako by ste ho kedy používali, pokiaľ HDR obraz stále "
+#~ "vyzerá dobre a prechody sú plynulé.\n"
+#~ "Aby sa predišlo kolísaniu jasu, odporúča sa neprekračovať maximálny "
+#~ "priemerný jas displeja %1cd/m²"
+
+#~ msgid ""
+#~ "Configure how bright “100%” on the normal brightness slider should be. "
+#~ "Make it as bright as you’d ever use it, as long as the HDR image still "
+#~ "looks good and the gradients are smooth."
+#~ msgstr ""
+#~ "Nastavte, ako jasná by mala byť „100%“ na bežnom posuvníku jasu. Nastavte "
+#~ "jas tak vysoko, ako by ste ho kedy používali, pokiaľ HDR obraz stále "
+#~ "vyzerá dobre a prechody sú plynulé."
