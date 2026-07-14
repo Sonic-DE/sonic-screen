@@ -19,7 +19,6 @@ random_seed
 /build*/
 CMakeLists.txt.user*
 *.unc-backup*
-.clang-format
 cmake-build-debug*
 .idea
 /compile_commands.json
