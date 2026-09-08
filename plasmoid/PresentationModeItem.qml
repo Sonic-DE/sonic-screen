@@ -17,7 +17,9 @@ import org.kde.plasma.extras as PlasmaExtras
 ColumnLayout {
     id: root
 
-    property alias checked: presentationModeSwitch.checked
+    required property var applet
+
+    property bool requestedChecked: applet.presentationModeEnabled
 
     spacing: Kirigami.Units.smallSpacing
 
@@ -28,27 +30,15 @@ ColumnLayout {
         Layout.bottomMargin: -root.spacing
         text: i18n("Enable Presentation Mode")
 
+        checked: root.applet.presentationModePending ? root.requestedChecked : root.applet.presentationModeEnabled
+        enabled: !root.applet.presentationModePending
+
         onToggled: {
-            // disable Switch while job is running
-            enabled = false;
-
-            const service = pmSource.serviceForSource("PowerDevil"); // qmllint disable unqualified
-
+            root.requestedChecked = checked
             if (checked) {
-                const op = service.operationDescription("beginSuppressingScreenPowerManagement");
-                op.reason = i18n("User enabled presentation mode");
-
-                const job = service.startOperationCall(op);
-                job.finished.connect(job => {
-                    enabled = true;
-                });
+                root.applet.enablePresentationMode(i18n("User enabled presentation mode"))
             } else {
-                const op = service.operationDescription("stopSuppressingScreenPowerManagement");
-
-                const job = service.startOperationCall(op);
-                job.finished.connect(job => {
-                    enabled = true;
-                });
+                root.applet.disablePresentationMode()
             }
         }
     }
@@ -65,10 +55,10 @@ ColumnLayout {
         Layout.fillWidth: true
         Layout.leftMargin: presentationModeSwitch.indicator.width + presentationModeSwitch.spacing
 
-        iconSource: pmSource.inhibitions.length > 0 ? pmSource.inhibitions[0].Icon || "" : "" // qmllint disable unqualified
+        iconSource: root.applet.inhibitions.length > 0 ? root.applet.inhibitions[0].Icon || "" : ""
         text: {
-            const inhibitions = pmSource.inhibitions; // qmllint disable unqualified
-            const inhibition = inhibitions[0];
+            const inhibitions = root.applet.inhibitions
+            const inhibition = inhibitions[0]
             if (inhibitions.length > 1) {
                 return i18ncp("Some Application and n others enforce presentation mode",
                               "%2 and %1 other application are enforcing presentation mode.",
@@ -83,7 +73,7 @@ ColumnLayout {
                                  "%1 is enforcing presentation mode: %2", inhibition.Name, inhibition.Reason)
                 }
             } else {
-                return "";
+                return ""
             }
         }
     }

@@ -12,7 +12,9 @@ plasma_add_applet(org.kde.kscreen
 
 target_link_libraries(org.kde.kscreen PRIVATE
                       Qt::Qml
+                      Qt::DBus
                       KF6::I18n
+                      KF6::Service
                       Plasma::Plasma
                       KF6::Screen
                       kscreen_common

@@ -14,52 +14,22 @@ import org.kde.config as KConfig
 import org.kde.kcmutils as KCMUtils
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.core as PlasmaCore
-import org.kde.plasma.plasma5support as P5Support
 import org.kde.plasma.plasmoid
 
 PlasmoidItem {
     id: root
 
-    // Only show if the user enabled presentation mode
-    Plasmoid.status: presentationModeEnabled ? PlasmaCore.Types.ActiveStatus : PlasmaCore.Types.PassiveStatus
+    // Only show if the user enabled presentation mode. These members are
+    // supplied by the C++ Plasma::Applet subclass and are absent from the
+    // generic Plasma::Applet qmltypes description.
+    // qmllint disable missing-property
+    Plasmoid.status: Plasmoid.presentationModeEnabled ? PlasmaCore.Types.ActiveStatus : PlasmaCore.Types.PassiveStatus
     Plasmoid.icon: "preferences-desktop-display-randr-symbolic"
-    toolTipSubText: presentationModeEnabled ? i18n("Presentation mode is enabled") : ""
+    toolTipSubText: Plasmoid.presentationModeEnabled ? i18n("Presentation mode is enabled") : ""
+    // qmllint enable missing-property
 
     readonly property string kcmName: "kcm_kscreen"
     readonly property bool kcmAllowed: KConfig.KAuthorized.authorizeControlModule("kcm_kscreen")
-
-    property bool presentationModeEnabled: false
-
-    P5Support.DataSource {
-        id: pmSource
-        engine: "powermanagement"
-        connectedSources: ["PowerDevil", "Inhibitions"]
-
-        onSourceAdded: source => {
-            disconnectSource(source);
-            connectSource(source);
-        }
-        onSourceRemoved: source => {
-            disconnectSource(source);
-        }
-
-        readonly property var inhibitions: {
-            var inhibitions = [];
-
-            var data = pmSource.data.Inhibitions;
-            if (data) {
-                for (const key in data) {
-                    if (key === "plasmashell" || key === "plasmoidviewer") { // ignore our own inhibition
-                        continue;
-                    }
-
-                    inhibitions.push(data[key]);
-                }
-            }
-
-            return inhibitions;
-        }
-    }
 
     PlasmaCore.Action {
         id: configureAction
@@ -84,10 +54,10 @@ PlasmoidItem {
         }
 
         PresentationModeItem {
+            applet: Plasmoid
             Layout.fillWidth: true
             Layout.topMargin: Kirigami.Units.smallSpacing * 2
             Layout.leftMargin: Kirigami.Units.smallSpacing
-            onCheckedChanged: root.presentationModeEnabled = checked
         }
 
         // compact the layout

@@ -23,8 +23,7 @@ Dependencies:
     'frameworks/kitemmodels': '@latest-kf6'
     'plasma/libplasma': '@same'
     'plasma/libkscreen': '@same'
-    'plasma/layer-shell-qt': '@same'
-    'plasma/plasma5support': '@same'
+     'plasma/layer-shell-qt': '@same'
 
 RuntimeDependencies:
  - 'on': ['@all']

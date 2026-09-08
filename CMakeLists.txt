@@ -36,7 +36,7 @@ include(ECMAddTests)
 
 include_directories("${CMAKE_CURRENT_BINARY_DIR}")
 
-find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Gui Test QuickControls2)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Gui Test QuickControls2 DBus)
 if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
     find_package(Qt6GuiPrivate ${QT_MIN_VERSION} REQUIRED NO_MODULE)
 endif()
@@ -46,6 +46,7 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     DBusAddons
     I18n
     KCMUtils
+    Service
     Svg
     XmlGui
     Crash
@@ -72,7 +73,6 @@ find_package(X11_XCB REQUIRED)
 find_package(XCB REQUIRED COMPONENTS XCB ATOM)
 
 ecm_find_qmlmodule(org.kde.kitemmodels REQUIRED)
-ecm_find_qmlmodule(org.kde.plasma.plasma5support REQUIRED)
 
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 
