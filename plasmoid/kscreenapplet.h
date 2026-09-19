@@ -15,6 +15,7 @@
 
 #include <QMap>
 #include <QQmlEngine>
+#include <QStringList>
 #include <QVariantList>
 #include <QVariantMap>
 #include <optional>
@@ -76,7 +77,7 @@ private:
     void onScreenSaverOwnerChanged(const QString &service, const QString &oldOwner, const QString &newOwner);
 
 private Q_SLOTS:
-    void onInhibitionsChanged(const QList<QPair<QString, QString>> &added, const QStringList &removed);
+    void onInhibitionsChanged(const QList<QStringList> &added, const QStringList &removed);
 
 private:
     void rebuildInhibitions();
