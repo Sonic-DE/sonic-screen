@@ -33,11 +33,6 @@
 
 Q_LOGGING_CATEGORY(LOG_KSCREEN_APPLET, "org.kde.plasma.kscreen")
 
-// PolicyAgent DBus types
-using InhibitionInfo = QPair<QString, QString>;
-Q_DECLARE_METATYPE(InhibitionInfo)
-Q_DECLARE_METATYPE(QList<InhibitionInfo>)
-
 static const QString s_powerService = QStringLiteral("org.kde.Solid.PowerManagement");
 static const QString s_policyAgentPath = QStringLiteral("/org/kde/Solid/PowerManagement/PolicyAgent");
 static const QString s_policyAgentInterface = QStringLiteral("org.kde.Solid.PowerManagement.PolicyAgent");
@@ -51,10 +46,8 @@ K_PLUGIN_CLASS_WITH_JSON(KScreenApplet, "metadata.json")
 KScreenApplet::KScreenApplet(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
     : Plasma::Applet(parent, data, args)
 {
-    qRegisterMetaType<InhibitionInfo>();
-    qRegisterMetaType<QList<InhibitionInfo>>();
-    qDBusRegisterMetaType<InhibitionInfo>();
-    qDBusRegisterMetaType<QList<InhibitionInfo>>();
+    qRegisterMetaType<QList<QStringList>>();
+    qDBusRegisterMetaType<QList<QStringList>>();
 }
 
 KScreenApplet::~KScreenApplet()
@@ -84,7 +77,7 @@ void KScreenApplet::init()
                 s_policyAgentInterface,
                 QStringLiteral("InhibitionsChanged"),
                 this,
-                SLOT(onInhibitionsChanged(QList<QPair<QString, QString>>, QStringList)));
+                SLOT(onInhibitionsChanged(QList<QStringList>, QStringList)));
 
     connect(new KScreen::GetConfigOperation(KScreen::GetConfigOperation::NoEDID),
             &KScreen::ConfigOperation::finished,
@@ -258,7 +251,7 @@ void KScreenApplet::queryInhibitions()
     auto *watcher = new QDBusPendingCallWatcher(QDBusConnection::sessionBus().asyncCall(msg), this);
 
     connect(watcher, &QDBusPendingCallWatcher::finished, this, [this, owner, generation, revision, serial](QDBusPendingCallWatcher *w) {
-        QDBusPendingReply<QList<InhibitionInfo>> reply(*w);
+        QDBusPendingReply<QList<QStringList>> reply(*w);
         w->deleteLater();
         if (generation != m_policyGeneration || serial != m_policyQuerySerial || owner != m_powerOwner) {
             return;
@@ -274,8 +267,12 @@ void KScreenApplet::queryInhibitions()
             QMap<QString, QVariantMap> snapshot;
             const auto inhibitions = reply.value();
             for (const auto &info : inhibitions) {
-                const QString &appId = info.first;
-                const QString &reason = info.second;
+                if (info.size() < 2) {
+                    qCWarning(LOG_KSCREEN_APPLET) << "Ignoring malformed inhibition entry" << info;
+                    continue;
+                }
+                const QString &appId = info.at(0);
+                const QString &reason = info.at(1);
                 if (appId == QStringLiteral("plasmashell") || appId == QStringLiteral("plasmoidviewer")) {
                     continue;
                 }
@@ -302,12 +299,16 @@ void KScreenApplet::queryInhibitions()
     });
 }
 
-void KScreenApplet::onInhibitionsChanged(const QList<QPair<QString, QString>> &added, const QStringList &removed)
+void KScreenApplet::onInhibitionsChanged(const QList<QStringList> &added, const QStringList &removed)
 {
     ++m_policyRevision;
     for (const auto &info : added) {
-        const QString &appId = info.first;
-        const QString &reason = info.second;
+        if (info.size() < 2) {
+            qCWarning(LOG_KSCREEN_APPLET) << "Ignoring malformed inhibition entry" << info;
+            continue;
+        }
+        const QString &appId = info.at(0);
+        const QString &reason = info.at(1);
         if (appId == QStringLiteral("plasmashell") || appId == QStringLiteral("plasmoidviewer")) {
             continue;
         }

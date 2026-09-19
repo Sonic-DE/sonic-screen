@@ -11,23 +11,21 @@
 
 #include <utility>
 
-using InhibitionInfo = QPair<QString, QString>;
-
 class PolicyAgentMock : public QObject {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.Solid.PowerManagement.PolicyAgent")
 
 public:
-    QList<InhibitionInfo> entries{{QStringLiteral("org.example.Player"), QStringLiteral("Playing video")}};
+    QList<QStringList> entries{{QStringLiteral("org.example.Player"), QStringLiteral("Playing video")}};
 
 public Q_SLOTS:
-    QList<InhibitionInfo> ListInhibitions() const
+    QList<QStringList> ListInhibitions() const
     {
         return entries;
     }
 
 Q_SIGNALS:
-    void InhibitionsChanged(const QList<InhibitionInfo> &added, const QStringList &removed);
+    void InhibitionsChanged(const QList<QStringList> &added, const QStringList &removed);
 };
 
 class ScreenSaverMock : public QObject, protected QDBusContext {
@@ -72,8 +70,7 @@ class PresentationModeDbusTest : public QObject {
 private Q_SLOTS:
     void initTestCase()
     {
-        qDBusRegisterMetaType<InhibitionInfo>();
-        qDBusRegisterMetaType<QList<InhibitionInfo>>();
+        qDBusRegisterMetaType<QList<QStringList>>();
 
         QDBusConnection bus = QDBusConnection::connectToBus(QDBusConnection::SessionBus, QStringLiteral("screen-test-service"));
         QVERIFY(bus.registerService(QStringLiteral("org.kde.Solid.PowerManagement")));
@@ -94,7 +91,12 @@ private Q_SLOTS:
         QCOMPARE(applet.inhibitions().constFirst().toMap().value(QStringLiteral("Reason")).toString(), QStringLiteral("Playing video"));
 
         QSignalSpy spy(&applet, &KScreenApplet::inhibitionsChanged);
-        Q_EMIT m_policyAgent.InhibitionsChanged({{QStringLiteral("org.example.Recorder"), QStringLiteral("Recording")}}, {});
+        Q_EMIT m_policyAgent.InhibitionsChanged(
+            {
+                {QStringLiteral("org.example.Recorder"), QStringLiteral("Recording")},
+                {QStringLiteral("malformed")},
+            },
+            {});
         QTRY_COMPARE_WITH_TIMEOUT(applet.inhibitions().size(), 2, 5000);
         QVERIFY(!spy.isEmpty());
     }
