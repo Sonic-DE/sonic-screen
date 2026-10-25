@@ -273,7 +273,8 @@ void KScreenApplet::queryInhibitions()
                 }
                 const QString &appId = info.at(0);
                 const QString &reason = info.at(1);
-                if (appId == QStringLiteral("plasmashell") || appId == QStringLiteral("plasmoidviewer")) {
+                if (appId == QStringLiteral("sonicshell") || appId == QStringLiteral("org.sonicde.sonicshell") || appId == QStringLiteral("plasmashell")
+                    || appId == QStringLiteral("plasmoidviewer")) {
                     continue;
                 }
                 QVariantMap entry;
@@ -309,7 +310,8 @@ void KScreenApplet::onInhibitionsChanged(const QList<QStringList> &added, const 
         }
         const QString &appId = info.at(0);
         const QString &reason = info.at(1);
-        if (appId == QStringLiteral("plasmashell") || appId == QStringLiteral("plasmoidviewer")) {
+        if (appId == QStringLiteral("sonicshell") || appId == QStringLiteral("org.sonicde.sonicshell") || appId == QStringLiteral("plasmashell")
+            || appId == QStringLiteral("plasmoidviewer")) {
             continue;
         }
         QVariantMap entry;
