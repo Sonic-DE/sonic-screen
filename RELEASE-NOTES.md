@@ -2,7 +2,7 @@
 
 SonicDE's display settings, on-screen display and panel applet for arranging monitors, changing resolution and switching screen layouts.
 
-## Unreleased
+## 6.8.2 (2026-11-10)
 
 - Now presents itself with SonicDE names and identity throughout the desktop.
 
