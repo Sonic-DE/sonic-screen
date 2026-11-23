@@ -24,7 +24,12 @@ set_tests_properties(presentationmodedbustest PROPERTIES ENVIRONMENT "QT_QPA_PLA
 # now.
 # TODO: Drop this when KF6_MIN_VERSION >= 6.27.0
 if(KF6KCMUtils_VERSION VERSION_GREATER_EQUAL "6.27.0")
-    add_test(NAME kcm_smoketest COMMAND kcmshell6 --smoke-test kcm_kscreen)
+    # The kcmshell6 of the KCMUtils built against, never another desktop's on PATH.
+    find_program(KCMSHELL6_EXECUTABLE kcmshell6
+        PATHS ${KF6KCMUtils_DIR}/../../../bin ${KF6KCMUtils_DIR}/../../../../bin
+        NO_DEFAULT_PATH REQUIRED
+    )
+    add_test(NAME kcm_smoketest COMMAND ${KCMSHELL6_EXECUTABLE} --smoke-test kcm_kscreen)
     set_tests_properties(kcm_smoketest PROPERTIES
         ENVIRONMENT_MODIFICATION QT_PLUGIN_PATH=path_list_prepend:${CMAKE_BINARY_DIR}/bin
     )
